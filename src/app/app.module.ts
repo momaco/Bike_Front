@@ -6,15 +6,17 @@ import { AppComponent } from './app.component';
 import { BikeService } from './services/bike.service';
 import { AdminComponent } from './components/admin/admin.component';
 import { HomeComponent } from './components/home/home.component';
-import { ReactiveFormsModule } from '../../node_modules/@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+import { ViewRegistrationComponent } from './components/view-registration/view-registration.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AdminComponent,
     HomeComponent,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ViewRegistrationComponent
   ],
   imports: [
     BrowserModule,

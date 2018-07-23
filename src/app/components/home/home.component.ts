@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BikeService } from '../../services/bike.service';
 import { FormGroup, FormControl, Validators, ReactiveFormsModule } from '@angular/forms';
-import { Observable } from '../../../../node_modules/rxjs';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-home',

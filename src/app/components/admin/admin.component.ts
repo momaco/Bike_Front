@@ -1,13 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { BikeService } from 'src/app/services/bike.service';
+import { BikeService } from '../../services/bike.service';
 
 @Component({
   selector: 'app-admin',
-  template: `
-    <p>
-      admin works!
-    </p>
-  `,
+  template: './admin.component.html',
   styleUrls: ['./admin.component.css']
 })
 export class AdminComponent implements OnInit {
@@ -20,9 +16,9 @@ export class AdminComponent implements OnInit {
     this.getBikes();
   }
 
-  getBikes(){
+  getBikes() {
     this.bikeService.getBikes().subscribe(
-      data => {this.bikes = data},
+      data => {this.bikes = data; },
       err => console.error(err),
       () => console.log('bikes loaded')
     );
